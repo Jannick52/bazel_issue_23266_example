@@ -1,0 +1,3 @@
+module(name = "main_module")
+
+bazel_dep(name = "wrapper-mavsdk", version = "1.0.0")

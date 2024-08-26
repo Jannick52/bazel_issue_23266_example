@@ -1,0 +1,10 @@
+# BUILD.bazel
+
+cc_binary(
+    name = "hello_world_mavsdk",
+    srcs = ["hello_world_mavsdk.cpp"],
+    deps = [
+        "@wrapper-mavsdk//:mavsdk",
+    ],
+    copts = ["-std=c++17"],
+)
